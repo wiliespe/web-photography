@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+  </head>
+  <body></body>
+  <header class="header" id="header"><a class="logo" href="/"><img src="./assets/img/logo.png" alt="logo"/></a>
+    <div class="topbar" id="topbar">
+      <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>Log in</span></div>
+      <div class="topbar__icon" data-type="register"><i class="fa fa-user-plus"></i><span>Register</span></div>
+      <div class="toggle-menu">
+        <div class="toggle-menu__icon" id="toggle-menu">
+          <div class="first-bar"></div>
+          <div class="second-bar"></div>
+          <div class="third-bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="aside" id="aside"> 
+    <nav class="main-nav" id="main-nav">
+      <ul class="main-menu" id="main-menu">
+        <li class="main-menu__item"><a class="main-menu__link" href="/">home</a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="/about.html">about</a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <h1 class="title">Contact</h1>
+    <div class="contact">
+      <div class="contact__form">
+        <form class="form-contact">
+          <div class="form-contact__fields">
+            <input class="form-contact__input" type="text" name="name" placeholder="Name"/>
+            <input class="form-contact__input" type="email" name="email" placeholder="Email"/>
+            <input class="form-contact__input" type="text" name="subjet" placeholder="Subjet"/>
+          </div>
+          <div class="form-contact__field">
+            <textarea class="form-contact__textarea" name="message" placeholder="Message"></textarea>
+          </div>
+        </form>
+        <input class="button form__submit" type="submit" value="Send"/>
+      </div>
+      <div class="contact__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46453.28086434793!2d-2.0089882961437575!3d43.30734974083305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51affe3b68fe15%3A0xe43ec55994864649!2zU2FuIFNlYmFzdGnDoW4sIEd1aXDDunpjb2E!5e0!3m2!1ses!2ses!4v1572799134867!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="">     </iframe>
+      </div>
+      <div class="social">
+        <div class="social__icon"><i class="fab fa-twitter-square"></i><i class="fab fa-twitter-square"></i></div>
+        <div class="social__icon"><i class="fab fa-instagram"></i><i class="fab fa-instagram"></i></div>
+        <div class="social__icon"><i class="fab fa-youtube-square"></i><i class="fab fa-youtube-square"></i></div>
+        <div class="social__icon"><i class="fab fa-pinterest-square"></i><i class="fab fa-pinterest-square"></i></div>
+      </div>
+    </div>
+  </main>
+  <div class="lightbox" id="login-modal"> 
+    <form class="form" id="login-form"> 
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-password"/>
+      </div>
+      <div class="form__field">
+        <input class="button form__submit" type="submit" value="Sign In"/>
+      </div>
+    </form>
+  </div>
+  <div class="lightbox" id="login-modal">
+    <form class="form" id="login-form"> 
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-password"/>
+      </div>
+      <div class="form__field">
+        <input class="form__submit" type="submit" value="send"/>
+      </div>
+    </form>
+  </div>
+  <div class="lightbox" id="register-modal">
+    <form class="form" id="register-form"> 
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-register-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-register-password"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-repeatpassword">Repeat password</label>
+        <input class="form__input" type="password" name="repeatpassword" id="register-repeatpassword"/>
+      </div>
+      <div class="form__field">
+        <input class="button form__submit" type="submit" value="Continue"/>
+      </div>
+    </form>
+  </div>
+  <script src="js/scripts-min.js"></script>
+</html>

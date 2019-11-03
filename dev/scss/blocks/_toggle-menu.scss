@@ -1,0 +1,54 @@
+.toggle-menu {
+    width: 3em;
+    height: 3em;
+
+    &__icon {
+        width: 3em;
+        height: 3em;
+        position: relative;
+        & .first-bar,
+        & .second-bar,
+        & .third-bar {
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: $text-color;
+            border-radius: 4rem;
+            transition: transform 0.3s;
+            
+        }
+        & .first-bar {
+            top: 12px
+        }
+        & .second-bar {
+            top: 22px
+        }
+        & .third-bar{
+            top: 32px
+        }
+
+        @include laptop {
+            display: none;
+        }
+    }
+
+    .show .first-bar {
+        transform: rotate(-45deg);
+        top: 1.5rem;
+    }
+
+    .show .second-bar {
+        width: 0;
+    }
+
+    .show .third-bar {
+        transform: rotate(45deg);
+        top: 1.5rem;
+    }
+
+    @include laptop {
+        height: 4em;
+        width: 4em;
+    }
+}
+

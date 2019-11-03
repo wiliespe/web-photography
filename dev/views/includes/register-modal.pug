@@ -1,0 +1,29 @@
+.lightbox#login-modal
+    form#login-form.form 
+        .form__field
+            label(for="login-email").form__label Email
+            input(type="email" name="email")#login-email.form__input
+        .form__field
+            label(for="login-password").form__label Password
+            input(type="password" name="password")#login-password.form__input
+        .form__field
+            input(type="submit" value="send").form__submit
+
+
+.lightbox#register-modal
+    form#register-form.form 
+        .form__field
+            label(for="login-email").form__label Email
+            input(type="email" name="email")#login-register-email.form__input
+
+        .form__field
+            label(for="login-password").form__label Password
+            input(type="password" name="password")#login-register-password.form__input
+
+        .form__field
+            label(for="login-repeatpassword").form__label Repeat password
+            input(type="password" name="repeatpassword")#register-repeatpassword.form__input 
+
+        .form__field
+            input.button(type="submit" value="Continue").form__submit
+            

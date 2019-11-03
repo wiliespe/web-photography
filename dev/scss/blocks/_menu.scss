@@ -1,0 +1,31 @@
+.main-menu {
+    @include reset-list;
+    background-color: $dark-color-2;
+
+    &__item {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 2.5;
+        border-bottom: 1px solid $border-color;
+
+        @include laptop {
+            line-height: 3;
+            border: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    @include laptop {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        background-color: transparent;
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,37 @@
+extends ../templates/template
+block menu
+    include ../includes/main-menu
+block title
+    h1.title Contact
+block main 
+    .contact
+        .contact__form
+            form.form-contact
+                .form-contact__fields
+                    input(type="text" name="name" placeholder="Name").form-contact__input
+                    input(type="email" name="email" placeholder="Email").form-contact__input
+                    input(type="text" name="subjet" placeholder="Subjet").form-contact__input
+                .form-contact__field
+                    textarea(name="message", placeholder="Message").form-contact__textarea
+            input.button(type="submit" value="Send").form__submit
+        .contact__map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46453.28086434793!2d-2.0089882961437575!3d43.30734974083305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51affe3b68fe15%3A0xe43ec55994864649!2zU2FuIFNlYmFzdGnDoW4sIEd1aXDDunpjb2E!5e0!3m2!1ses!2ses!4v1572799134867!5m2!1ses!2ses', frameborder='0', style='border:0;', allowfullscreen='')      
+        .social
+            .social__icon
+                i.fab.fa-twitter-square
+                i.fab.fa-twitter-square
+            .social__icon
+                i.fab.fa-instagram
+                i.fab.fa-instagram
+            .social__icon
+                i.fab.fa-youtube-square
+                i.fab.fa-youtube-square
+            .social__icon
+                i.fab.fa-pinterest-square
+                i.fab.fa-pinterest-square
+
+            
+
+            
+    
+

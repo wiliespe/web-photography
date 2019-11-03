@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+  </head>
+  <body></body>
+  <header class="header" id="header"><a class="logo" href="/"><img src="./assets/img/logo.png" alt="logo"/></a>
+    <div class="topbar" id="topbar">
+      <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>Log in</span></div>
+      <div class="topbar__icon" data-type="register"><i class="fa fa-user-plus"></i><span>Register</span></div>
+      <div class="toggle-menu">
+        <div class="toggle-menu__icon" id="toggle-menu">
+          <div class="first-bar"></div>
+          <div class="second-bar"></div>
+          <div class="third-bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="aside" id="aside"> 
+    <nav class="main-nav" id="main-nav">
+      <ul class="main-menu" id="main-menu">
+        <li class="main-menu__item"><a class="main-menu__link" href="/">home</a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="/about.html">about</a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <h1 class="title">About  </h1>
+    <div class="about">
+      <div class="about__img show"><img src="assets/img/about.jpg" alt="about image1"/></div>
+      <div class="about__text show">
+        <h2>title 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione deserunt ipsa perspiciatis dolorum minima porro, aliquam voluptates quis voluptate a rerum aspernatur commodi incidunt et illo quibusdam expedita velit.</p>
+      </div>
+      <div class="about__img"><img src="assets/img/about2.jpg" alt="about image2"/></div>
+      <div class="about__text"> 
+        <h2>title 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione deserunt ipsa perspiciatis dolorum minima porro, aliquam voluptates quis voluptate a rerum aspernatur commodi incidunt et illo quibusdam expedita velit.</p>
+      </div>
+      <div class="about__img"><img src="assets/img/about3.jpg" alt="about image3"/></div>
+      <div class="about__text"> 
+        <h2>title 3</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione deserunt ipsa perspiciatis dolorum minima porro, aliquam voluptates quis voluptate a rerum aspernatur commodi incidunt et illo quibusdam expedita velit.    </p>
+      </div>
+    </div>
+    <div class="controls"> <i class="fas fa-chevron-circle-left" id="prev"></i><i class="fas fa-chevron-circle-right" id="next"></i></div>
+  </main>
+  <div class="lightbox" id="login-modal"> 
+    <form class="form" id="login-form"> 
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-password"/>
+      </div>
+      <div class="form__field">
+        <input class="button form__submit" type="submit" value="Sign In"/>
+      </div>
+    </form>
+  </div>
+  <div class="lightbox" id="login-modal">
+    <form class="form" id="login-form"> 
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-password"/>
+      </div>
+      <div class="form__field">
+        <input class="form__submit" type="submit" value="send"/>
+      </div>
+    </form>
+  </div>
+  <div class="lightbox" id="register-modal">
+    <form class="form" id="register-form"> 
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-register-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-register-password"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-repeatpassword">Repeat password</label>
+        <input class="form__input" type="password" name="repeatpassword" id="register-repeatpassword"/>
+      </div>
+      <div class="form__field">
+        <input class="button form__submit" type="submit" value="Continue"/>
+      </div>
+    </form>
+  </div>
+  <script src="js/scripts-min.js"></script>
+</html>

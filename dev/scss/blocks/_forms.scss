@@ -1,0 +1,79 @@
+.form {
+    background-color: $dark-color;
+    padding: 1rem;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 15px;
+    margin: 0.5rem;
+
+
+    &__field {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+       }
+
+    &__label,
+    &__input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        border-bottom: 1px solid $text-color;
+    }
+
+    &__submit {
+        border-radius: 5px;
+        width: 50%;
+        padding: 0.5em;
+        background-color: $primary-color;
+        border:none;
+        color: $text-color;
+        cursor: pointer;
+    }
+}
+
+.form-contact {
+    display: grid;
+    gap: 30px;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    @include laptop {
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto 2rem;
+        width: 50%;
+    }
+    
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-between;
+    }
+
+    &__input,
+    &__textarea {
+        height: 40px;
+        background-color: $dark-color;
+        color: $text-color;
+        border: 1px solid;
+        outline: none;
+        padding-left: .5rem;
+    }
+
+    &__textarea {
+        resize: none;
+        width: 320px;
+        height: 150px;
+        margin-bottom: 1rem;
+        border: 1px solid $text-color;
+    }  
+}

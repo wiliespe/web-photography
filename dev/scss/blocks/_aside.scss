@@ -1,0 +1,21 @@
+.aside {
+    position: fixed;
+    background-color: $dark-color;
+    width: 100%;
+    height: 100vh;
+    top: 3em;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    z-index: 1;
+    @include laptop {
+        grid-row: 1 / 3;
+        grid-column: 1;
+        width: 25%;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    &.show {
+        transform: translateY(0);
+    }
+}

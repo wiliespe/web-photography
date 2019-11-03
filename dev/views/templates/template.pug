@@ -1,0 +1,35 @@
+include ../config/config
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.4.2/css/all.css")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+    header.header#header
+        a(href="/").logo
+            img(src="./assets/img/logo.png", alt="logo")
+        .topbar#topbar
+            .topbar__icon(data-type="login")
+                i.fa.fa-user
+                span Log in
+            .topbar__icon(data-type="register")
+                i.fa.fa-user-plus
+                span Register
+            .toggle-menu
+                .toggle-menu__icon#toggle-menu
+                    .first-bar
+                    .second-bar
+                    .third-bar
+    .aside#aside 
+        block menu
+    main.main
+        block title
+        block main
+    include ../includes/login-modal
+    include ../includes/register-modal
+    block scripts
+    script(src="js/scripts-min.js")

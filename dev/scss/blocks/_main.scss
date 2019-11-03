@@ -1,0 +1,5 @@
+.main {
+    @include laptop {
+        grid-column: 2;
+    }
+}

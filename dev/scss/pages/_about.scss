@@ -1,0 +1,54 @@
+.about {
+    &__text {
+        padding: .5rem;
+    }
+
+    @include laptop {
+        display: grid;
+        height: 60vh;
+        grid-template-columns: 60% 40%;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        
+        &__img,
+        &__text {
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s;  
+            width: 50%;
+            top: 0;
+        }
+
+        &__img {
+            left: 0;
+        }
+
+        &__text {
+            left: 50%;
+            font-size: 2rem;
+            padding: 0 2rem;
+        }
+
+        & h2 {
+            margin: 0;
+        }
+    }
+}
+
+.controls {
+     display: none;
+     @include laptop {
+     width: 50%;
+     margin: 0 auto;
+     font-size: 2rem;
+     display: flex;
+     justify-content: space-between;
+     color: $text-color;
+        }
+    }
+.show {
+    opacity: 1;
+}    
+    
+

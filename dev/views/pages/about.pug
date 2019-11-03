@@ -1,0 +1,24 @@
+extends ../templates/template
+block menu
+    include ../includes/main-menu
+block title
+    h1.title About  
+    .about
+        .about__img.show
+            img(src="assets/img/about.jpg", alt="about image1")
+        .about__text.show
+            h2 title 1
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione deserunt ipsa perspiciatis dolorum minima porro, aliquam voluptates quis voluptate a rerum aspernatur commodi incidunt et illo quibusdam expedita velit.
+        .about__img
+            img(src="assets/img/about2.jpg", alt="about image2")
+        .about__text 
+            h2 title 2
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione deserunt ipsa perspiciatis dolorum minima porro, aliquam voluptates quis voluptate a rerum aspernatur commodi incidunt et illo quibusdam expedita velit.
+        .about__img
+            img(src="assets/img/about3.jpg", alt="about image3")
+        .about__text 
+            h2 title 3
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione deserunt ipsa perspiciatis dolorum minima porro, aliquam voluptates quis voluptate a rerum aspernatur commodi incidunt et illo quibusdam expedita velit.    
+    .controls 
+        i.fas.fa-chevron-circle-left#prev
+        i.fas.fa-chevron-circle-right#next
